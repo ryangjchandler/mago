@@ -10,6 +10,7 @@ use mago_linter::plugin::best_practices::rules::no_empty_catch_clause::NoEmptyCa
 use mago_linter::plugin::best_practices::rules::no_empty_loop::NoEmptyLoopRule;
 use mago_linter::plugin::best_practices::rules::no_goto::NoGotoRule;
 use mago_linter::plugin::best_practices::rules::no_hash_emoji::NoHashEmojiRule;
+use mago_linter::plugin::best_practices::rules::no_implicit_string_variable::NoImplicitStringVariableRule;
 use mago_linter::plugin::best_practices::rules::no_multi_assignments::NoMultiAssignmentsRule;
 use mago_linter::plugin::best_practices::rules::no_unused_parameter::NoUnusedParameterRule;
 use mago_linter::plugin::best_practices::rules::use_while_instead_of_for::UseWhileInsteadOfForRule;
@@ -29,5 +30,6 @@ rule_test!(test_no_empty_loop, NoEmptyLoopRule);
 rule_test!(test_no_goto, NoGotoRule);
 rule_test!(test_no_hash_emoji, NoHashEmojiRule);
 rule_test!(test_no_multi_assignments, NoMultiAssignmentsRule);
+rule_test!(test_no_implicit_string_variable, NoImplicitStringVariableRule);
 rule_test!(test_no_unused_parameter, NoUnusedParameterRule);
 rule_test!(test_use_while_instead_of_for, UseWhileInsteadOfForRule);

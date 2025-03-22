@@ -1,3 +1,5 @@
+use rules::no_implicit_string_variable::NoImplicitStringVariableRule;
+
 use crate::definition::PluginDefinition;
 use crate::plugin::best_practices::rules::combine_consecutive_issets::CombineConsecutiveIssetsRule;
 use crate::plugin::best_practices::rules::disallowed_functions::DisallowedFunctionsRule;
@@ -48,6 +50,7 @@ impl Plugin for BestPracticesPlugin {
             Box::new(NoDebugSymbolsRule),
             Box::new(NoElseClauseRule),
             Box::new(NoEmptyCatchClauseRule),
+            Box::new(NoImplicitStringVariableRule),
             Box::new(NoMultiAssignmentsRule),
             Box::new(NoEmptyLoopRule),
             Box::new(UseWhileInsteadOfForRule),
